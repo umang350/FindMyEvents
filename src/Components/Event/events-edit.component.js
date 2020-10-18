@@ -75,6 +75,30 @@ export default class EventsEdit extends Component {
             case "name":
                 formErrors.name = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
                 break;
+            case "code":
+                formErrors.code = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "description":
+                formErrors.description = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "organizer":
+                formErrors.organizer = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "location":
+                formErrors.location = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "startDate":
+                formErrors.startDate = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "endDate":
+                formErrors.endDate = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "eventType":
+                formErrors.eventType = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
+            case "category":
+                formErrors.category = value.length < 3 && value.length > 0 ? "Minimum 3 Chars are required" : "";
+                break;
             default:
                 break;
         }
