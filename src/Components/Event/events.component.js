@@ -246,9 +246,9 @@ class Events extends Component {
                                     )
                                 })
                             }
-                            <h6 className="text-white">Select Event Start Date</h6>
+                            <h6 className="text-white">Select Starting After Date</h6>
                             <input className="form-control" type="date" name="startDate" onChange={this.handleStartDateChange.bind(this)} />
-                            <h6 className="text-white">Select Event End Date</h6>
+                            <h6 className="text-white">Select Ending Before Date</h6>
                             <input className="form-control" type="date" name="endDate" onChange={this.handleEndDateChange.bind(this)} />
                             <br />
                             <h6 className="text-white">Price</h6>
@@ -323,12 +323,12 @@ class Events extends Component {
 
                                     <thead className="thead-light">
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Category</th>
-                                            <th data-sort-method='number'>Price (Rs.)</th>
-                                            <th>Start Date</th>
-                                            <th>Location</th>
+                                            <th data-toggle="tooltip" data-placement="top" title="Click to Sort">Name</th>
+                                            <th data-toggle="tooltip" data-placement="top" title="Click to Sort">Type</th>
+                                            <th data-toggle="tooltip" data-placement="top" title="Click to Sort">Category</th>
+                                            <th data-toggle="tooltip" data-placement="top" title="Click to Sort" data-sort-method='number'>Price (Rs.)</th>
+                                            <th data-toggle="tooltip" data-placement="top" title="Click to Sort">Start Date</th>
+                                            <th data-toggle="tooltip" data-placement="top" title="Click to Sort">Location</th>
                                             <th data-sort-method='none'>Actions</th>
                                         </tr>
                                     </thead>
